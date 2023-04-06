@@ -20,7 +20,7 @@ function App() {
   const [optionSelected, setOptionSelected] = useState<number>();
   const [chameleonPlayer, setChameleonPlayer] = useState<number>();
   const [viewState, setViewState] = useState<ViewState>();
-
+  console.log("render");
   const next = () => {
     setViewState((viewState) => {
       if (viewState === undefined) return undefined;
